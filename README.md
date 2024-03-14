@@ -44,3 +44,10 @@ Agora que a aplicação está rodando, vou alterar a imagem para distroless. Use
 4. Com dúvidas de como funcionava a imagem, tentei acessar via shell, mas não estava conseguindo acessar mesmo usando a vesão de dev.
 #### Solução
 Como o comando python estava sendo executado, testei a imagem com o comando `["python", "-m", "flask","run","--host=0.0.0.0"]` e deu certo. Configurei um container redis para executar a aplicação e funcionou
+
+## Indo além do pedido. :construction:
+1. Criar uma pipeline usando jenkins que irá realizar o build, e o push da imagem automaticamente.
+2. Conversão da aplicação para um charts do helm.
+3. Adicionar observabilidade a aplicação com o prometheus e o grafana.
+4. Realzar a criação de uma infraestrutura EKS na AWS com o terraform.
+5. Utilizar gitops para realizar o deploy da aplicação em um cluster EKS.
